@@ -25,7 +25,7 @@ body {
 /* HERO IMAGE */
 .hero {
   height: 60vh;
-  background: url("linktree-pic.jpeg") center/cover no-repeat;
+  background: url("linktree-pic-light.jpg") center/cover no-repeat; /* choose a light bottom image */
   position: relative;
 }
 
@@ -59,18 +59,23 @@ body {
 .socials a {
   margin: 0 12px;
   font-size: 26px;
-  color: #000;
   transition: 0.3s ease;
 }
+
+/* Set colors: LinkedIn black, others default */
+.fa-instagram { color: #E1306C; }
+.fa-threads { color: #000; }
+.fa-snapchat { color: #FFFC00; }
+.fa-linkedin { color: #000; }
 
 .socials a:hover {
   transform: scale(1.2);
   opacity: 0.7;
 }
 
-/* LINKS SECTION */
+/* LINKS SECTION (no left/right padding) */
 .links {
-  padding: 36px 22px 10px;
+  padding: 36px 0 10px; /* removed 22px left/right */
   max-width: 420px;
   margin: auto;
   background: linear-gradient(
@@ -80,20 +85,19 @@ body {
   );
 }
 
-
 /* BUTTONS */
 .btn {
   display: block;
   text-decoration: none;
   text-align: center;
   padding: 16px;
-  margin: 16px 0;
+  margin: 16px 20px; /* small horizontal margin for spacing from edges */
   font-size: 1.05rem;
   letter-spacing: 0.5px;
   color: #111;
   border: 2px solid #000;
   border-radius: 30px;
-  background: transparent;
+  background: #fff; /* white background */
   transition: all 0.35s ease;
 }
 
@@ -109,8 +113,8 @@ body {
   text-align: center;
   font-size: 0.8rem;
   color: #555;
-  padding: 20px 10px 28px;
-  background: #f5f5f5;
+  padding: 20px 0 28px;
+  background: #fff; /* matches link buttons */
 }
 </style>
 </head>
